@@ -1,0 +1,1 @@
+{"name":"Local: sum","url":"d:\\java\\sum.java","tests":[{"id":1664647459222,"input":"* 5 10","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\java\\sum.java","group":"local","local":true}
