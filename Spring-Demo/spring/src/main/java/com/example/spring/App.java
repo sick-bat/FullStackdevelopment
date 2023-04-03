@@ -1,7 +1,7 @@
 package com.example.spring;
 
-// import org.springframework.context.ApplicationContext;
-// import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.example.spring.config.AppConfig;
 import com.example.spring.util.FileChecker;
