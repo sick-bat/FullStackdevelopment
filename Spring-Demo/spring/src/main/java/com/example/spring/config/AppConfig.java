@@ -9,6 +9,7 @@ import com.example.spring.util.FileUtil;
 
 public class AppConfig {
    
+   
     @Bean // lifecyle of this FileUtil would be handled by spring IoC container
     public FileUtil util() {
         return new FileUtil();
@@ -18,4 +19,10 @@ public class AppConfig {
     public FileChecker checker(FileUtil util) {
         return new FileChecker(util);
     }
+
+    @Bean
+    public FileUtil utilData() {
+        return new FileUtil();
+    }
 }
+
