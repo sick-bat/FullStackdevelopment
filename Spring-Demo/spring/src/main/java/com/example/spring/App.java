@@ -6,12 +6,12 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.ani.spring.config.AppConfig;
-import com.ani.spring.excel.XlConfig;
-import com.ani.spring.util.FileChecker;
-import com.ani.spring.util.FileUtil;
+import com.example.spring.config.AppConfig;
+import com.example.spring.excel.XlConfig;
+import com.example.spring.util.FileChecker;
+import com.example.spring.util.FileUtil;
 
-public final class App {
+public final class App{
 
     public static void normal() {
         System.out.println("🔥 Providing Dependencies Normally 🔥");
@@ -50,6 +50,7 @@ public final class App {
         String[] names = ctx.getBeanDefinitionNames();
         System.out.println(Arrays.toString(names));
     }
+
 
     public static void main(String[] args) {
         withSpringAnnotationConfig();

@@ -4,8 +4,8 @@ import java.io.File;
 
 import org.springframework.context.annotation.Bean;
 
-import com.ani.spring.util.FileChecker;
-import com.ani.spring.util.FileUtil;
+import com.example.spring.util.FileChecker;
+import com.example.spring.util.FileUtil;
 
 public class AppConfig {
    

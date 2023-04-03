@@ -1,8 +1,8 @@
-package com.ani.spring.excel;
+package com.example.spring.excel;
 
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan(basePackages = "com.ani.spring")
+@ComponentScan(basePackages = "com.example.spring")
 public class XlConfig {
     
 }
