@@ -1,5 +1,6 @@
 package com.example.spring.excel;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component

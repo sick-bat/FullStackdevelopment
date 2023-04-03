@@ -7,11 +7,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.example.spring.config.AppConfig;
+import com.example.spring.excel.XLManager;
 import com.example.spring.excel.XlConfig;
 import com.example.spring.util.FileChecker;
 import com.example.spring.util.FileUtil;
 
 public final class App{
+
 
     public static void normal() {
         System.out.println("🔥 Providing Dependencies Normally 🔥");
@@ -49,7 +51,12 @@ public final class App{
 
         String[] names = ctx.getBeanDefinitionNames();
         System.out.println(Arrays.toString(names));
+
+        XLManager manager = ctx.getBean(XLManager.class);
+        System.out.println(manager);
+        manager.configXL();
     }
+
 
 
     public static void main(String[] args) {
