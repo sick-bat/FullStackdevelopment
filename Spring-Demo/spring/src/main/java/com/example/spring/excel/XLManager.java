@@ -22,10 +22,10 @@ public class XLManager {
     @Qualifier("utilData")
     private FileUtil utilAbc;
 
-    @Autowired
-    public void setUtilAbc(FileUtil utilAbc) {
-        this.utilAbc = utilAbc;
-    }
+    // @Autowired
+    // public void setUtilAbc(FileUtil utilAbc) {
+    //     this.utilAbc = utilAbc;
+    // }
 
     public void configXL() {
         reader.setReadLimit(10);

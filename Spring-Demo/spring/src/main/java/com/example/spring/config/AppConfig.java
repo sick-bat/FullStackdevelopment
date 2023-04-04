@@ -1,14 +1,11 @@
 package com.example.spring.config;
 
-import java.io.File;
-
 import org.springframework.context.annotation.Bean;
 
 import com.example.spring.util.FileChecker;
 import com.example.spring.util.FileUtil;
 
 public class AppConfig {
-   
    
     @Bean // lifecyle of this FileUtil would be handled by spring IoC container
     public FileUtil util() {
@@ -25,4 +22,3 @@ public class AppConfig {
         return new FileUtil();
     }
 }
-

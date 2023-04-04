@@ -1,5 +1,6 @@
 package com.example.spring;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 
 import org.springframework.context.ApplicationContext;
@@ -7,13 +8,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.example.spring.config.AppConfig;
+import com.example.spring.excel.XLFormatter;
 import com.example.spring.excel.XLManager;
 import com.example.spring.excel.XlConfig;
 import com.example.spring.util.FileChecker;
 import com.example.spring.util.FileUtil;
 
-public final class App{
-
+public final class App {
 
     public static void normal() {
         System.out.println("🔥 Providing Dependencies Normally 🔥");
@@ -57,10 +58,14 @@ public final class App{
         manager.configXL();
     }
 
-
-    
+    public static void somethingIntresting() {
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(XlConfig.class, AppConfig.class);
+        XLFormatter formatter = ctx.getBean(XLFormatter.class);
+        String formattedOutput = formatter.formatData();
+        System.out.println(formattedOutput);
+    }
 
     public static void main(String[] args) {
-        withSpringAnnotationConfig();
+        somethingIntresting();
     }
 }

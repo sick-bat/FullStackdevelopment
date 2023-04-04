@@ -1,5 +1,4 @@
 package com.example.spring.util;
-import com.example.spring.util.*;
 
 public class FileChecker {
     
