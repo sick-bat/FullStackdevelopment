@@ -1,4 +1,4 @@
-package com.sac.springwebdemos.springweb;
+package com.sac.web;
 
 
 import org.springframework.boot.SpringApplication;
