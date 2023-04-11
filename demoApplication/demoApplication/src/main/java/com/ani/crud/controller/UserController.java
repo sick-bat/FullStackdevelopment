@@ -72,16 +72,5 @@ public class UserController {
     }
 
      // DELETE - http://localhost:8080/user/{id}
-    @DeleteMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody ResponseEntity<AppRes> deleteUserById(@PathVariable Integer id) {
 
-        userService.deleteUserById(id);
-        
-        AppRes res = AppRes.builder()
-                            .sts("success")
-                            .msg("User Deleted")
-                            .build();
-
-        return ResponseEntity.status(HttpStatus.OK).body(res);
-    }
 }
