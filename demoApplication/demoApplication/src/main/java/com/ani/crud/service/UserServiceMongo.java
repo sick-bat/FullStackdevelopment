@@ -28,7 +28,7 @@ public class UserServiceMongo implements UserService {
 
     @Override
     public User readUserById(long id) {
-        return repository.findById(id);
+        return repository.findAll();
     }
 
     @Override
